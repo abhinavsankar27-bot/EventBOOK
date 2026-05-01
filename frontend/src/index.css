@@ -1,0 +1,33 @@
+/* ============================================================
+   BRUTALIST RETRO DESIGN SYSTEM
+   ============================================================ */
+:root {
+  --red: #BC2C2C;
+  --blue: #5DA4C9;
+  --yellow: #FCD758;
+  --beige: #F5F1E3;
+  --charcoal: #2C2C2C;
+  --white: #FFFFFF;
+  --font-head: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --shadow: 6px 6px 0 var(--charcoal);
+  --shadow-red: 6px 6px 0 var(--red);
+  --shadow-blue: 6px 6px 0 var(--blue);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--beige); color: var(--charcoal); overflow-x: hidden; line-height: 1.6; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-head); font-weight: 900; text-transform: uppercase; letter-spacing: -0.04em; line-height: 0.9; }
+a { color: inherit; text-decoration: none; }
+button { font-family: var(--font-head); cursor: pointer; }
+input,textarea,select { font-family: var(--font-body); }
+
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--beige); }
+::-webkit-scrollbar-thumb { background: var(--charcoal); }
